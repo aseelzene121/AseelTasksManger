@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AseelTasksManger</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="Signin">تسجيل الدخول</string>
+    <string name="Add">اضافة</string>
+    <string name="ConfirmPassword">تأكيد كلمة المرور</string>
+    <string name="Email">بريد الكتروني</string>
+    <string name="FullName">ألاسم الكامل</string>
+    <string name="Location">ألموقع</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="Phone">ألهاتف</string>
+    <string name="Save">حفظ</string>
+    <string name="SignUp">تسجيل</string>
+    <string name="TaskText">نص المهمة</string>
+    <string name="title_activity_login">عنوان قائمة السجيل</string>
+    <string name="title_activity_taskslist">قائمة المهمات</string>
+    <string name="Contacts">جهات الاتصال</string>
+    <string name="Logout">تسجيل الخروج </string>
+    <string name="Forgotpass">نسيت كلمة السر </string>
+</resources>

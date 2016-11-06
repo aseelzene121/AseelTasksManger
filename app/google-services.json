@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "193031395834",
+    "firebase_url": "https://aseeltasks-4505e.firebaseio.com",
+    "project_id": "aseeltasks-4505e",
+    "storage_bucket": "aseeltasks-4505e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193031395834:android:dd73cf4f60fbb17d",
+        "android_client_info": {
+          "package_name": "com.zene.aseel.aseeltasksmanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193031395834-t8orc4smf5983vs3um0ta6mo0lbl95gs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zene.aseel.aseeltasksmanger",
+            "certificate_hash": "207C202ECE9FFC5136A38028C1532ACC3AB7EAF8"
+          }
+        },
+        {
+          "client_id": "193031395834-26r5bqjomnpbnqbk5ubk9bkvi7vd6mp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa0bg_BzT_NCR4rVxks9nRvrusd9fJcEY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193031395834-26r5bqjomnpbnqbk5ubk9bkvi7vd6mp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

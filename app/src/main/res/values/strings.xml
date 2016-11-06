@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">AseelTasksManger</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_taskslist">TaskslistActivity</string>
+    <string name="email">email</string>
+    <string name="Signin">sing in</string>
+    <string name="Email">email</string>
+    <string name="FullName">full name</string>
+    <string name="Password">password</string>
+    <string name="ConfirmPassword">confirmpass</string>
+    <string name="SignUp">sign up</string>
+    <string name="Add">+</string>
+    <string name="TaskText">task text</string>
+    <string name="Phone">phone</string>
+    <string name="Contacts">contacts</string>
+    <string name="Location">location</string>
+    <string name="Save">save</string>
+    <string name="Forgotpass">Forgotpass</string>
+    <string name="Logout">LogOut</string>
+    <string name="setting">setting</string>
+    <string name="Text">Text</string>
+</resources>
