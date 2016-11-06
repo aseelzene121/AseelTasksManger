@@ -136,6 +136,7 @@ public class SignupActivity extends AppCompatActivity {
         if (authStateListener != null)
 
             auth.removeAuthStateListener(authStateListener);
+        //123
 
 
     }
