@@ -14,9 +14,10 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/tvTitle"
-            android:background="#be754592"
+            android:background="#beb375d8"
+            android:layout_gravity="right"
             android:layout_alignParentTop="true"
-            android:layout_gravity="right" />
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:layout_width="match_parent"
@@ -25,7 +26,6 @@
             android:text="Small Text"
             android:id="@+id/tvAddress"
             android:background="#5b304f"
-            android:layout_marginTop="71dp"
             android:layout_below="@+id/ibPhone"
             android:layout_alignParentStart="true" />
 
@@ -35,9 +35,9 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Medium Text"
             android:id="@+id/tvDate"
-            android:layout_above="@+id/rbPriority"
+            android:layout_below="@+id/tvAddress"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="46dp" />
+            android:layout_marginTop="43dp" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -51,8 +51,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rbPriority"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_below="@+id/tvDate"
+            android:layout_toEndOf="@+id/tvDate"
+            android:layout_marginTop="31dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -60,9 +61,8 @@
             android:text="Done"
             android:id="@+id/cbCheck"
             android:checked="false"
-            android:layout_below="@+id/rbPriority"
-            android:layout_alignEnd="@+id/ibPhone"
-            android:layout_marginEnd="28dp" />
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/rbPriority" />
 
     </RelativeLayout>
 </LinearLayout>
