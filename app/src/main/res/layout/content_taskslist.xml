@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/etText"
             android:layout_weight="1"
-            android:text="@string/Text" />
+            android:text="@string/Text"
+            android:hint="etText" />
 
         <Button
             android:layout_width="0dp"
