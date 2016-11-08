@@ -95,6 +95,7 @@ public class AddTasksActivity extends AppCompatActivity {
 
                     if (databaseError == null) {
                         Toast.makeText(getBaseContext(), "save ok", Toast.LENGTH_LONG).show();
+                        finish();// finish an exit this activity
 
                     } else {
                         Toast.makeText(getBaseContext(), "save Err" + databaseError.getMessage(), Toast.LENGTH_LONG).show();
@@ -122,8 +123,7 @@ public class AddTasksActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     dataHandler();
-                    Intent i = new Intent(AddTasksActivity.this, TaskslistActivity.class);
-                    startActivity(i);
+
                 }
             });
 
