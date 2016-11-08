@@ -176,42 +176,7 @@ public class SignupActivity extends AppCompatActivity {
     }
 
 
-//private void Signin(String email, String passw) {
-//
-//    auth.signInWithEmailAndPassword(email, passw).addOnCompleteListener(SignupActivity.this, new OnCompleteListener<AuthResult>() {
-//
-//        @Override
-//
-//        public void onComplete(@NonNull Task<AuthResult> task) {
-//
-//            if (task.isSuccessful())
-//
-//            {
-//
-//                Toast.makeText(SignupActivity.this, "signIn Successful.", Toast.LENGTH_SHORT).show();
-//
-//                // Intent intent=new Intent(LogInActivity.this,MainFCMActivity.class);
-//
-//                //   startActivity(intent);
-//
-//                //  finish();
-//
-//            } else
-//
-//            {
-//
-//                Toast.makeText(SignupActivity.this, "signIn failed." + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-//
-//                task.getException().printStackTrace();
-//
-//            }
-//
-//        }
-//
-//    });
-//
-//    FirebaseAuth.getInstance().signOut();
-//}
+
 }
 
 
