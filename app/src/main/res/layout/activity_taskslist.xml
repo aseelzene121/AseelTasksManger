@@ -22,7 +22,7 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_taskslist"
-        android:id="@+id/btnAdd" />
+        android:id="@+id/content" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"

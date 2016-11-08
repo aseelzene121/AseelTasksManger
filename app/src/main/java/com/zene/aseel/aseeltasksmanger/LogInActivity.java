@@ -93,6 +93,7 @@ public class LogInActivity extends AppCompatActivity {
             public void onClick(View view) {
              dataHandler();
                 Intent i=new Intent(LogInActivity.this,TaskslistActivity.class);
+                startActivity(i);
             }
 
         });
