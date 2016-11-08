@@ -29,7 +29,6 @@ public class TaskslistActivity extends AppCompatActivity {
 
     private EditText etAdd;
     private Button btnAdd;
-    private ListView ivTasks;
     private MyAdapterTask adapterTask;
     private ListView listView;
 
@@ -42,11 +41,10 @@ public class TaskslistActivity extends AppCompatActivity {
 
         etAdd = (EditText) findViewById(R.id.etText);
         btnAdd = (Button) findViewById(R.id.btnAdd);
-        ivTasks = (ListView) findViewById(R.id.ivTasks);
-        eventHandler();
         listView = (ListView) findViewById(R.id.ivTasks);
         adapterTask = new MyAdapterTask(this, R.layout.item_my_task);
         listView.setAdapter(adapterTask);
+        eventHandler();
 
     }
 

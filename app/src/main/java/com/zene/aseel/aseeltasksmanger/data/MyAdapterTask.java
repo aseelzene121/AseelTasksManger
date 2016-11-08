@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.zene.aseel.aseeltasksmanger.R;
@@ -28,10 +29,11 @@ public class MyAdapterTask extends android.widget.ArrayAdapter {
         TextView tvTitle = (TextView) convertView.findViewById(R.id.tvTitle);
         ImageButton btncall = (ImageButton) convertView.findViewById(R.id.btnItemCall);
         TextView tvItempone = (TextView) convertView.findViewById(R.id.tvItempone);
+        RatingBar rtbItemPriority=(RatingBar)convertView.findViewById(R.id.rtbItemPriority);
         final MyTask myTask = (MyTask) getItem(position);
-        tvItemText.setText(myTask.getPhone());
+        tvItemText.setText(myTask.getAddress());
         tvTitle.setText(myTask.getTitle());
-        tvItempone.setText(myTask.getAddress());
+        tvItempone.setText(myTask.getPhone());
         
         btncall.setOnClickListener(new View.OnClickListener() {
             @Override
