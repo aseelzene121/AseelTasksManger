@@ -18,25 +18,30 @@ public class MyTask
      */
     private String title;
     private float priority;
-    private Date createdAt;
+    private Date when;
     private  String address;
     private  String phone;
-    private  boolean isComplated=false;
+    private  boolean isCompleted;
 
 
     public MyTask(String id, String title, int priority, Date when, String address, String phone) {
         this.id = id;
         this.title = title;
         this.priority = priority;
-        when= when;
         this.address = address;
         this.phone = phone;
+        this.when=when;
+        this.isCompleted=isCompleted();
     }
 
     public MyTask()
     {
 
     }
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+    public void setIsCompleted(boolean isCompleted){this.isCompleted=isCompleted;}
 
     public String getId() {
         return id;
@@ -63,11 +68,11 @@ public class MyTask
     }
 
     public Date getWhen() {
-        return createdAt;
+        return when;
     }
 
     public void setWhen(Date when) {
-        createdAt = when;
+        when = when;
     }
 
     public String getAddress() {
@@ -92,9 +97,15 @@ public class MyTask
                 "id='" + id + '\'' +
                 ", title='" + title + '\'' +
                 ", priority=" + priority +
-                ", When=" +createdAt +
+                ", When=" +when +
                 ", address='" + address + '\'' +
                 ", phone='" + phone + '\'' +
                 '}';
     }
+    public boolean setIsCompleted(){
+        if (isCompleted);
+        return true;
+
+    }
+
 }
