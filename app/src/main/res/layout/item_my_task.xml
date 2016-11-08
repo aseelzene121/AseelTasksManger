@@ -14,10 +14,12 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Large Text"
             android:id="@+id/tvTitle"
-            android:background="#beb375d8"
+            android:background="#be5f486d"
             android:layout_gravity="right"
+            android:backgroundTint="#a591b9"
             android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignEnd="@+id/tvAddress"
+            android:layout_alignBottom="@+id/cbCheck" />
 
         <TextView
             android:layout_width="match_parent"
@@ -25,8 +27,9 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="Small Text"
             android:id="@+id/tvAddress"
-            android:background="#5b304f"
-            android:layout_below="@+id/ibPhone"
+            android:background="#987b90"
+            android:layout_marginTop="32dp"
+            android:layout_alignParentTop="true"
             android:layout_alignParentStart="true" />
 
         <TextView
@@ -37,23 +40,22 @@
             android:id="@+id/tvDate"
             android:layout_below="@+id/tvAddress"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="43dp" />
+            android:layout_marginTop="28dp" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/ibPhone"
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/rbPriority"
-            android:src="@android:drawable/ic_menu_call" />
+            android:src="@android:drawable/ic_menu_call"
+            android:layout_below="@+id/tvAddress"
+            android:layout_alignParentEnd="true" />
 
         <RatingBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/rbPriority"
-            android:layout_below="@+id/tvDate"
-            android:layout_toEndOf="@+id/tvDate"
-            android:layout_marginTop="31dp" />
+            android:layout_below="@+id/ibPhone"
+            android:layout_toStartOf="@+id/cbCheck" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -61,8 +63,10 @@
             android:text="Done"
             android:id="@+id/cbCheck"
             android:checked="false"
-            android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/rbPriority" />
+            android:layout_gravity="right"
+            android:layout_below="@+id/rbPriority"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp" />
 
     </RelativeLayout>
 </LinearLayout>
