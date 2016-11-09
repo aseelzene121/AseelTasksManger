@@ -100,7 +100,7 @@ public class TaskslistActivity extends AppCompatActivity {
                 Intent i = new Intent(TaskslistActivity.this, AddTasksActivity.class);
                startActivity(i);
 
-                dataHandler();
+
 
 
             }
@@ -122,10 +122,10 @@ public class TaskslistActivity extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 adapterTask.clear();
-                for (DataSnapshot ds:dataSnapshot.getChildren());
+                for (DataSnapshot ds:dataSnapshot.getChildren())
                 {
-                    MyTask myTask= dataSnapshot.getValue(MyTask.class);
-                    myTask.setAddress(dataSnapshot.getKey());
+                    MyTask myTask= ds.getValue(MyTask.class);
+                    myTask.setAddress(ds.getKey());
                     adapterTask.add(myTask);
                 }
             }
