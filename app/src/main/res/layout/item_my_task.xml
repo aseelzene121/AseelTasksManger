@@ -68,5 +68,14 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="40dp" />
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDel"
+            android:layout_alignBottom="@+id/tvTitle"
+            android:src="@android:drawable/ic_menu_delete"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rbPriority" />
+
     </RelativeLayout>
 </LinearLayout>
