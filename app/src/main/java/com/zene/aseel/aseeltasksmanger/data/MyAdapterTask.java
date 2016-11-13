@@ -21,10 +21,15 @@ import com.zene.aseel.aseeltasksmanger.R;
  * Created by user on 10/30/2016.
  */
 public class MyAdapterTask extends android.widget.ArrayAdapter {
+    private DatabaseReference reference;
     public MyAdapterTask(Context context, int resource) {
         super(context, resource);
+        String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
+        email = email.replace(".", "_");
+        reference= FirebaseDatabase.getInstance().getReference(email).child("my Tasks");
+
     }
-    private DatabaseReference reference;
+
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_my_task, parent, false);
@@ -39,9 +44,9 @@ public class MyAdapterTask extends android.widget.ArrayAdapter {
         tvItemText.setText(myTask.getAddress());
         tvTitle.setText(myTask.getTitle());
         btnDel.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
-                //**delete from the firebase sever
                 reference.child(myTask.getId()).removeValue(new DatabaseReference.CompletionListener() {
                     @Override
                     public void onComplete(DatabaseError databaseError, DatabaseReference databaseReference) {
@@ -54,19 +59,14 @@ public class MyAdapterTask extends android.widget.ArrayAdapter {
                         }
                     }
                 });
-                String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-                email = email.replace(".", "_");
-                reference= FirebaseDatabase.getInstance().getReference(email).child("MyTasks");
             }
         });
-        //del 02
        // tvDate.setText(myTask.getPhone());
         btncall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getContext(),"Call",Toast.LENGTH_LONG).show();
                 //MAKE CALL
-
             }
         });
         rtbItemPriority.setRating(myTask.getPriority());
