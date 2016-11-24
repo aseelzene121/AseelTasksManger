@@ -138,7 +138,6 @@ public class SignupActivity extends AppCompatActivity {
             auth.removeAuthStateListener(authStateListener);
         //123
 
-
     }
 
     private void creatAcount(String email, String passw) {
