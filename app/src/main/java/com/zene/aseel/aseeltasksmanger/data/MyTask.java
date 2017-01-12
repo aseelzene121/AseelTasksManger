@@ -72,7 +72,7 @@ public class MyTask
     }
 
     public void setWhen(Date when) {
-        when = when;
+        this.when = when;
     }
 
     public String getAddress() {

@@ -75,7 +75,7 @@ public class AddTasksActivity extends AppCompatActivity {
         if (isOk)
         {
             //isOk
-            MyTask myTask = new MyTask();
+            MyTask myTask = new  MyTask();
             myTask.setPhone(stPhone);
             myTask.setAddress(stLocatin);
             myTask.setTitle(stText);

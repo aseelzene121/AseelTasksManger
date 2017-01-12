@@ -26,7 +26,7 @@ public class MyAdapterTask extends android.widget.ArrayAdapter {
         super(context, resource);
         String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
         email = email.replace(".", "_");
-        reference= FirebaseDatabase.getInstance().getReference(email).child("my Tasks");
+        reference= FirebaseDatabase.getInstance().getReference(email).child("my ,Tasks");
 
     }
 
